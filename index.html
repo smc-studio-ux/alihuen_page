@@ -1,0 +1,1242 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alihuen · Talleres Artísticos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header fade-in">
+      <nav class="nav">
+        <div class="logo">
+          <span class="logo-symbol"></span>
+          <span class="logo-text">Alihuén</span>
+        </div>
+
+        <button class="menu-toggle">☰</button>
+
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#equipo">Quiénes somos</a></li>
+          <li><a href="#talleres">Talleres</a></li>
+          <li><a href="#metodologia">Metodología</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="hero-inner">
+        <div class="hero-top fade-up">
+          <h1>Alihuen</h1>
+        </div>
+
+        <div class="hero-bottom fade-up">
+          <p>
+            Formación artística integral para instituciones educativas.
+            Diseñamos talleres extracurriculares de teatro, danza, música y
+            circo que potencian la creatividad, la conciencia corporal y el
+            trabajo en equipo.
+          </p>
+          <a href="#talleres" class="btn-secondary">Conocer talleres</a>
+        </div>
+      </div>
+
+      <div class="wave-separator">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path
+            d="M0,60 
+            C240,120 480,0 720,30 
+            960,60 1200,90 1440,40 
+            L1440,120 L0,120 Z"
+            fill="#f7f5ef"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- MANIFIESTO -->
+    <div class="manifiesto-body">
+      <section class="manifesto">
+        <div class="manifesto-text fade-left">
+          <h2>Sembramos procesos, construimos comunidad</h2>
+          <p>
+            En Alihuén entendemos la formación artística como un proceso vivo.
+            Cada alumno crece a su ritmo, fortaleciendo su identidad y
+            desarrollando herramientas expresivas en un entorno de respeto y
+            acompañamiento.
+          </p>
+          <p>
+            Creemos en el arte como espacio de conexión en una época dominada
+            por la inmediatez. Nuestros talleres no buscan resultados rápidos,
+            sino experiencias significativas que dejen huella en quienes
+            participan.
+          </p>
+        </div>
+
+        <div class="manifesto-images fade-right">
+          <div class="photo"></div>
+          <div class="photo"></div>
+          <div class="photo"></div>
+        </div>
+      </section>
+
+      <!-- QUIÉNES SOMOS / EQUIPO -->
+      <section id="equipo" class="team">
+        <div class="team-header fade-up">
+          <h2>Quiénes somos</h2>
+          <p>
+            Alihuén es una compañía de formación artística integrada por
+            artistas y docentes con experiencia en el ámbito educativo.
+            Trabajamos en parejas pedagógicas, articulando técnica y
+            sensibilidad para acompañar procesos creativos de manera sostenida y
+            cuidada dentro de cada institución.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <!-- JULIÁN -->
+          <article class="team-member fade-up" onclick="openCV('cv-juli')">
+            <div
+              class="member-photo"
+              style="
+                background-image: url(&quot;./assets/images/juli_figueroa_perfil.jpeg&quot;);
+              "
+            ></div>
+            <h3>Julián “Juli” Figueroa</h3>
+            <span class="member-role">Artes Circenses · Teatro Educativo</span>
+            <p class="member-bio">
+              Actor, músico y docente especializado en teatro educativo y artes
+              del circo. Entiende el arte como un espacio de juego y libertad
+              donde el humor es una herramienta central para el aprendizaje.
+              Formación en Actuación (UNA 2017–2021), técnicas de clown,
+              malabares e Instructorado en Pilates Reformer.
+            </p>
+          </article>
+          <!-- MATEO -->
+          <article class="team-member fade-up" onclick="openCV('cv-mateo')">
+            <div
+              class="member-photo"
+              style="
+                background-image: url(&quot;./assets/images/mateo_falbo_perfil.jpeg&quot;);
+              "
+            ></div>
+            <h3>Mateo Falbo</h3>
+            <span class="member-role"
+              >Teatro · Pedagogía Infantil y Juvenil</span
+            >
+            <p class="member-bio">
+              Profesor de teatro y actor con experiencia en instituciones
+              educativas y proyectos inclusivos. Formación en la UNA y
+              trayectoria en Teatro Colón, San Martín y producciones
+              audiovisuales. Especialista en juego teatral y desarrollo
+              expresivo en niños y jóvenes.
+            </p>
+          </article>
+
+          <!-- JUSTO -->
+          <article class="team-member fade-up" onclick="openCV('cv-justo')">
+            <div
+              class="member-photo"
+              style="
+                background-image: url(&quot;./assets/images/justo_cadario_perfil.jpeg&quot;);
+              "
+            ></div>
+            <h3>Justo Cadario</h3>
+            <span class="member-role">Teatro · Improvisación y Expresión</span>
+            <p class="member-bio">
+              Profesor de teatro y estudiante de Artes Dramáticas (UNA).
+              Experiencia en formación escolar, dirección en contextos
+              educativos y proyectos como Clubes TED-Ed. Promueve la
+              creatividad, la improvisación y la confianza grupal.
+            </p>
+          </article>
+
+          <!-- LULI -->
+          <article class="team-member fade-up" onclick="openCV('cv-luli')">
+            <div
+              class="member-photo"
+              style="
+                background-image: url(&quot;./assets/images/lucia_roisman_perfil.jpeg&quot;);
+              "
+            ></div>
+            <h3>Lucía “Luli” Roisman</h3>
+            <span class="member-role"
+              >Actuación · Clown · Expresión en Inglés</span
+            >
+            <p class="member-bio">
+              Actriz y docente formada en la UNA, con experiencia en
+              instituciones escolares y espacios artísticos. Especializada en
+              clown y expresión dramática. Integra el inglés y el trabajo
+              corporal en propuestas lúdicas y creativas.
+            </p>
+          </article>
+
+          <!-- ISA -->
+          <article class="team-member fade-up" onclick="openCV('cv-isa')">
+            <div
+              class="member-photo"
+              style="
+                background-image: url(&quot;./assets/images/isaias_maiola_perfil.jpeg&quot;);
+              "
+            ></div>
+            <h3>Isaías “Isa” Maiola Wheeler</h3>
+            <span class="member-role"
+              >Música · Producción · Contenidos Infantiles</span
+            >
+            <p class="member-bio">
+              Músico y productor con más de diez años creando música para
+              Pakapaka. Ganador del Martín Fierro y compositor en proyectos
+              internacionales. Integra música, imagen y tecnología en propuestas
+              pedagógicas innovadoras.
+            </p>
+          </article>
+
+          <!-- NIDO -->
+          <article class="team-member fade-up" onclick="openCV('cv-nido')">
+            <div
+              class="member-photo"
+              style="
+                background-image: url(&quot;./assets/images/nahuel_morales_perfil.jpeg&quot;);
+              "
+            ></div>
+            <h3>Nahuel “Nido” Morales</h3>
+            <span class="member-role">Música · Guitarra · Ensambles</span>
+            <p class="member-bio">
+              Profesor Superior de Música con amplia trayectoria en educación
+              formal. Especialista en guitarra, lenguaje musical y ensambles
+              escolares. Integra producción sonora y tecnología en proyectos
+              colectivos.
+            </p>
+          </article>
+
+          <!-- ROSARIO -->
+          <article class="team-member fade-up" onclick="openCV('cv-rosario')">
+            <div
+              class="member-photo"
+              style="
+                background-image: url(&quot;./assets/images/rosario_gasparini_perfil.jpeg&quot;);
+              "
+            ></div>
+            <h3>Rosario Gasparini</h3>
+            <span class="member-role">Expresión Corporal · Danza</span>
+            <p class="member-bio">
+              Licenciada en Composición Coreográfica (UNA) especializada en
+              expresión corporal. Trabaja con iniciación a la danza y formación
+              contemporánea infantil, promoviendo autoestima, conciencia
+              corporal y compañerismo.
+            </p>
+          </article>
+
+          <!-- LEO -->
+          <article class="team-member fade-up" onclick="openCV('cv-leo')">
+            <div
+              class="member-photo"
+              style="
+                background-image: url(&quot;./assets/images/leontina_bringas_perfil.jpeg&quot;);
+              "
+            ></div>
+            <h3>Leontina “Leo” Bringas</h3>
+            <span class="member-role">Danza · Acrobacia · Movimiento</span>
+            <p class="member-bio">
+              Bailarina y artista escénica, estudiante de Composición
+              Coreográfica (UNA). Formación en danza clásica y contemporánea,
+              acrobacia y teatro. Propone talleres de movimiento creativo y
+              exploración corporal.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- TALLERES -->
+      <section id="talleres" class="workshops">
+        <div class="workshops-inner">
+          <h2>Nuestros talleres</h2>
+          <p class="workshops-sub">
+            Propuestas artísticas adaptadas a cada etapa escolar.
+          </p>
+
+          <!-- TEATRO -->
+          <div class="workshop-row">
+            <div class="workshop-image teatro"></div>
+            <div class="workshop-content">
+              <h3>Teatro</h3>
+              <p>
+                Espacios de juego dramático e improvisación donde la imaginación
+                es el punto de partida. Trabajamos presencia escénica, expresión
+                verbal y corporal, fortaleciendo la confianza y el trabajo en
+                equipo.
+              </p>
+            </div>
+          </div>
+
+          <!-- CIRCO -->
+          <div class="workshop-row reverse">
+            <div class="workshop-image circo"></div>
+            <div class="workshop-content">
+              <h3>Circo y clown</h3>
+              <p>
+                Malabares, magia y técnicas de clown que desarrollan
+                coordinación, concentración y autoestima. Un enfoque lúdico que
+                transforma el error en oportunidad de aprendizaje.
+              </p>
+            </div>
+          </div>
+
+          <!-- EXPRESIÓN -->
+          <div class="workshop-row">
+            <div class="workshop-image expresion"></div>
+            <div class="workshop-content">
+              <h3>Expresión corporal</h3>
+              <p>
+                Movimiento, ritmo y conciencia corporal como herramientas para
+                reconocer emociones y ampliar las posibilidades expresivas.
+                Técnica y creatividad integradas en un mismo proceso.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="cta fade-up">
+      <div class="cta-inner">
+        <div class="cta-info">
+          <h2>Sumá arte a tu institución</h2>
+          <p>
+            Diseñamos propuestas artísticas a medida, integrándonos al proyecto
+            pedagógico de cada escuela. Trabajamos para que el arte sea una
+            experiencia formativa, colectiva y significativa dentro de la
+            comunidad educativa.
+          </p>
+          <div class="cta-image"></div>
+        </div>
+
+        <form
+          action="https://formspree.io/f/XXXXXXXX"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-group">
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Nombre y apellido"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Correo electrónico"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <input type="text" name="institucion" placeholder="Institución" />
+          </div>
+
+          <div class="form-group">
+            <textarea
+              name="mensaje"
+              placeholder="Contanos sobre tu institución o la propuesta que estás buscando"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Enviar consulta</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2026 Alihuén · Compañía de Formación Artística · CABA</p>
+    </footer>
+
+    <script src="animations.js"></script>
+    <!-- =============================
+     CV JULI
+        ============================= -->
+    <div id="cv-juli" class="cv-modal">
+      <div class="cv-modal-content">
+        <span class="cv-close" onclick="closeCV('cv-juli')">×</span>
+
+        <div class="cv-body">
+          <div class="cv-info">
+            <!-- IZQUIERDA -->
+            <h2>Julián “Juli” Figueroa</h2>
+            <h4>
+              Docente de Artes Circenses, Músico y Actor | Especialista en
+              Teatro Educativo
+            </h4>
+
+            <div class="cv-block">
+              <h5>Perfil Profesional</h5>
+              <p>
+                “Entiendo el arte como un espacio de juego y libertad donde el
+                humor es la herramienta principal para el aprendizaje. A través
+                del circo y el clown, busco que los alumnos desarrollen su
+                confianza, exploren sus capacidades físicas y descubran el
+                placer de compartir un momento creativo con sus pares. Mi
+                enfoque combina la técnica actoral con la magia de las artes del
+                circo para crear experiencias educativas dinámicas y
+                significativas.”
+              </p>
+            </div>
+
+            <div class="cv-block">
+              <h5>Experiencia Docente y de Variedades</h5>
+              <ul>
+                <li>
+                  <strong>Artes del Circo y Clown:</strong> Creador del “Payaso
+                  Torcuato”, con amplia trayectoria realizando shows de magia,
+                  malabares y burbujas en espacios públicos y eventos.
+                </li>
+                <li>
+                  <strong>Teatro Educativo en Escuelas:</strong> Integrante de
+                  “Nunca Jamás Producciones”, en proyectos diseñados
+                  específicamente para el ámbito escolar.
+                </li>
+                <li>
+                  <strong>Coordinación de Grupos:</strong> Experiencia en manejo
+                  de grupos mediante talleres lúdicos y presentaciones
+                  artísticas integrales.
+                </li>
+                <li>
+                  <strong>Músico:</strong> Guitarrista, pianista y cantante,
+                  integrando la música como recurso didáctico y expresivo.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Formación y Especialización Artística</h5>
+              <ul>
+                <li>
+                  Estudios en Licenciatura en Actuación – Universidad Nacional
+                  de las Artes (2017–2021).
+                </li>
+                <li>
+                  Formación en técnicas de clown – Espacio Aguirre y talleres de
+                  perfeccionamiento.
+                </li>
+                <li>Clínica de malabares y destrezas circenses.</li>
+                <li>
+                  Instructorado en Pilates Reformer – Federación Universitaria
+                  del Deporte Argentino (2025).
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Propuesta en Alihuén para Nivel Primario</h5>
+              <ul>
+                <li>
+                  <strong>Taller de Circo Integral:</strong> Malabares, magia y
+                  expresión corporal, fomentando motricidad fina y gruesa.
+                </li>
+                <li>
+                  <strong>Iniciación al Clown:</strong> Desarrollo de autoestima
+                  y pérdida del miedo escénico a través de la risa.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- DERECHA -->
+          <div class="cv-gallery">
+            <div class="cv-carousel">
+              <img src="./assets/images/circo.jpg" class="active" />
+              <img src="./assets/images/expresion.jpg" />
+              <img src="./assets/images/teatro.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =============================
+     CV MATEO
+     ============================= -->
+    <div id="cv-mateo" class="cv-modal">
+      <div class="cv-modal-content">
+        <span class="cv-close" onclick="closeCV('cv-mateo')">×</span>
+
+        <div class="cv-body">
+          <div class="cv-info">
+            <!-- IZQUIERDA -->
+            <h2>Mateo Falbo</h2>
+            <h4>
+              Profesor de Teatro y Actor | Especialista en Pedagogía Infantil y
+              Juvenil
+            </h4>
+
+            <div class="cv-block">
+              <h5>Perfil Profesional</h5>
+              <p>
+                "Entiendo el teatro como un espacio de libertad y
+                descubrimiento. Mi objetivo es brindar a los alumnos
+                herramientas que potencien su expresión y seguridad personal,
+                siempre desde una mirada inclusiva y respetuosa de la
+                singularidad de cada uno. Creo en el arte como un vehículo
+                fundamental para el desarrollo de la empatía y la integración
+                social".
+              </p>
+            </div>
+
+            <div class="cv-block">
+              <h5>Experiencia Docente e Institucional</h5>
+              <ul>
+                <li>
+                  <strong>Educación en Instituciones:</strong> Profesor de
+                  teatro en el “Del Viso Day School” (Pilar), institución de
+                  gran trayectoria educativa.
+                </li>
+                <li>
+                  <strong>Formación en Espacios Artísticos:</strong> Docente en
+                  la escuela de teatro y clown “Serendipita” (Paseo La Plaza) y
+                  en el estudio “De punta y pie”.
+                </li>
+                <li>
+                  <strong>Inclusión y Recreación:</strong> Docente en las
+                  colonias de verano del Gobierno de la Ciudad (Temporada 2026),
+                  trabajando específicamente en el área de discapacidad y
+                  recreación inclusiva.
+                </li>
+                <li>
+                  <strong>Talleres para Niños y Adolescentes:</strong>
+                  Especialista en coordinación de grupos jóvenes, fomentando el
+                  juego teatral y la creatividad colectiva.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Trayectoria Artística (Teatro y Cine)</h5>
+              <ul>
+                <li>
+                  <strong>Teatro Nacional:</strong> Participación en
+                  producciones de gran escala en el Teatro Colón (“Nabucco”) y
+                  el Teatro San Martín (“La dama de las rosas”).
+                </li>
+                <li>
+                  <strong>Cultura y Experimentación:</strong> Actor en obras
+                  presentadas en el Centro Cultural Kirchner (“La casa de
+                  atrás”) y el Complejo Ítaca.
+                </li>
+                <li>
+                  <strong>Cine y Audiovisual:</strong> Experiencia actoral en
+                  producciones destacadas como “La virgen de la tosquera” y “El
+                  Marginal”.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Formación Académica</h5>
+              <ul>
+                <li>
+                  Profesorado de Teatro: Estudiante avanzado (3er año) en la
+                  Universidad Nacional de las Artes (UNA).
+                </li>
+                <li>
+                  Formación Actoral Integral: Discípulo de grandes referentes de
+                  la escena nacional como Helena Tritek, Guillermo Cacace y
+                  Rubén Szuchmacher.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Propuesta en Alihuén para Nivel Primario</h5>
+              <ul>
+                <li>
+                  <strong>Teatro Inclusivo y Recreativo:</strong> Actividades
+                  diseñadas para integrar a todos los alumnos, celebrando la
+                  diversidad a través del juego escénico.
+                </li>
+                <li>
+                  <strong>Iniciación a la Actuación:</strong> Un primer
+                  acercamiento al mundo del teatro que combina la técnica
+                  actoral con el desarrollo de habilidades sociales.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- DERECHA -->
+          <div class="cv-gallery">
+            <div class="cv-carousel">
+              <img src="./assets/images/teatro.jpg" class="active" />
+              <img src="./assets/images/expresion.jpg" />
+              <img src="./assets/images/circo.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =============================
+     CV JUSTO
+     ============================= -->
+    <div id="cv-justo" class="cv-modal">
+      <div class="cv-modal-content">
+        <span class="cv-close" onclick="closeCV('cv-justo')">×</span>
+
+        <div class="cv-body">
+          <div class="cv-info">
+            <!-- IZQUIERDA -->
+            <h2>Justo Cadario</h2>
+            <h4>
+              Profesor de Teatro y Actor | Estudiante de la Licenciatura en
+              Artes Dramáticas (UNA)
+            </h4>
+
+            <div class="cv-block">
+              <h5>Perfil Profesional</h5>
+              <p>
+                "Concibo el teatro como una herramienta pedagógica fundamental
+                para el desarrollo personal, la comunicación y el trabajo
+                colectivo. Como docente, busco generar espacios de aprendizaje
+                cuidados, inclusivos y estimulantes, donde cada estudiante pueda
+                explorar su creatividad y su singularidad desde el respeto y la
+                confianza grupal".
+              </p>
+            </div>
+
+            <div class="cv-block">
+              <h5>Experiencia en Formación y Pedagogía Teatral</h5>
+              <ul>
+                <li>
+                  <strong>Docencia para Jóvenes y Niños:</strong> Amplia
+                  trayectoria coordinando clases de teatro, enfocadas en el
+                  entrenamiento actoral, el trabajo corporal y la improvisación.
+                </li>
+                <li>
+                  <strong>Proyecto "Clubes TED-Ed":</strong> Profesor de teatro
+                  en la Escuela Nuestra Señora de Luján, utilizando herramientas
+                  escénicas para potenciar la expresión oral y la comunicación
+                  en el ámbito escolar.
+                </li>
+                <li>
+                  <strong>Dirección en Contextos Educativos:</strong> Director
+                  de obra en los “Juegos Bonaerenses 2025”, acompañando procesos
+                  creativos y pedagógicos con grupos juveniles.
+                </li>
+                <li>
+                  <strong>Intervención Escolar:</strong> Participación como
+                  profesor de teatro en la “Semana de las Artes” de la Escuela
+                  Municipal N.º 1 de Lavalle, fortaleciendo el vínculo entre el
+                  arte y la institución educativa.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Formación Académica</h5>
+              <ul>
+                <li>
+                  Artes Dramáticas: Estudiante de la Licenciatura en la
+                  Universidad Nacional de las Artes (UNA).
+                </li>
+                <li>
+                  Carrera de Actuación: Egresado de la ETBA (Escuela de Teatro
+                  de Buenos Aires Raúl Serrano).
+                </li>
+                <li>
+                  Pedagogía Teatral: Formación específica en la enseñanza del
+                  teatro dictada por Mariel Bignasco en ETBA.
+                </li>
+                <li>
+                  Investigación Escénica: Participante del laboratorio “Mirada
+                  Colectiva” en el Teatro Nacional Cervantes.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Propuesta en Alihuén para Nivel Primario</h5>
+              <ul>
+                <li>
+                  <strong>Juego Dramático e Improvisación:</strong> Talleres
+                  diseñados para estimular la imaginación y la resolución de
+                  conflictos a través de la interpretación.
+                </li>
+                <li>
+                  <strong>Expresión Oral y Corporal:</strong> Herramientas
+                  teatrales aplicadas para que los alumnos ganen seguridad en su
+                  comunicación y presencia frente a sus pares.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- DERECHA -->
+          <div class="cv-gallery">
+            <div class="cv-carousel">
+              <img src="./assets/images/teatro.jpg" class="active" />
+              <img src="./assets/images/expresion.jpg" />
+              <img src="./assets/images/circo.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =============================
+     CV LULI
+     ============================= -->
+    <div id="cv-luli" class="cv-modal">
+      <div class="cv-modal-content">
+        <span class="cv-close" onclick="closeCV('cv-luli')">×</span>
+
+        <div class="cv-body">
+          <div class="cv-info">
+            <!-- IZQUIERDA -->
+            <h2>Lucía “Luli” Roisman</h2>
+            <h4>
+              Actriz y Docente de Actuación | Especialista en Expresión
+              Dramática y Clown
+            </h4>
+
+            <div class="cv-block">
+              <h5>Perfil Profesional</h5>
+              <p>
+                "Entiendo la actuación como una herramienta de
+                autodescubrimiento y expansión. Mi objetivo como docente es
+                facilitar un espacio donde el juego y la técnica actoral
+                permitan a los alumnos desarrollar su confianza, su capacidad de
+                escucha y su creatividad. Busco que cada estudiante encuentre en
+                el teatro un refugio de expresión libre y auténtica."
+              </p>
+            </div>
+
+            <div class="cv-block">
+              <h5>Experiencia Docente y Proyectos</h5>
+              <ul>
+                <li>
+                  <strong>Docencia en Instituciones:</strong> Se desempeñó como
+                  docente de actuación en el Colegio Río de la Plata
+                  (2019-2023), adquiriendo una sólida base en el manejo de
+                  grupos escolares.
+                </li>
+                <li>
+                  <strong>Talleres Artísticos:</strong> Docente de actuación en
+                  “Casa Humana” (2023-2025), coordinando procesos de aprendizaje
+                  para diversas edades.
+                </li>
+                <li>
+                  <strong>Escena Teatral:</strong> Actriz con experiencia en
+                  Microteatro (obras “High Concept” y “Kemufati”) y diversas
+                  producciones publicitarias.
+                </li>
+                <li>
+                  <strong>Habilidades Lingüísticas:</strong> Nivel de inglés
+                  nativo, integrando el idioma en propuestas artísticas
+                  multidisciplinarias.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Formación Académica</h5>
+              <ul>
+                <li>
+                  Artes Dramáticas: Estudiante de la Licenciatura en Actuación
+                  en la Universidad Nacional de las Artes (UNA).
+                </li>
+                <li>
+                  Entrenamiento Actoral: Formación en la Escuela de Agustín
+                  Alezzo y en el estudio de Nora Moseinco bajo la dirección de
+                  Inés Efrón.
+                </li>
+                <li>
+                  Especialización en Clown: Seminario de Clown teatral con
+                  Julieta Carrera, aportando herramientas lúdicas y de
+                  improvisación.
+                </li>
+                <li>
+                  Otras Disciplinas: Formación en piano y danzas (urbana,
+                  clásica y afro), complementando una visión integral del cuerpo
+                  en el escenario.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Propuesta en Alihuén para Nivel Primario</h5>
+              <ul>
+                <li>
+                  <strong>Teatro y Expresión en Inglés:</strong> Talleres que
+                  combinan la actuación con el aprendizaje del idioma de manera
+                  orgánica y divertida.
+                </li>
+                <li>
+                  <strong>Gimnasio Actoral Infantil:</strong> Juegos de
+                  improvisación y técnicas de clown para trabajar la presencia,
+                  la voz y el movimiento de forma lúdica.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- DERECHA -->
+          <div class="cv-gallery">
+            <div class="cv-carousel">
+              <img src="./assets/images/teatro.jpg" class="active" />
+              <img src="./assets/images/expresion.jpg" />
+              <img src="./assets/images/circo.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =============================
+     CV ISA
+     ============================= -->
+    <div id="cv-isa" class="cv-modal">
+      <div class="cv-modal-content">
+        <span class="cv-close" onclick="closeCV('cv-isa')">×</span>
+
+        <div class="cv-body">
+          <div class="cv-info">
+            <!-- IZQUIERDA -->
+            <h2>Isaías “Isa” Maiola Wheeler</h2>
+            <h4>
+              Músico, Productor Artístico y Realizador Audiovisual |
+              Especialista en Contenidos Infantiles
+            </h4>
+
+            <div class="cv-block">
+              <h5>Perfil Profesional</h5>
+              <p>
+                "Concibo la educación artística como un espacio de encuentro y
+                experimentación, donde la música y el trabajo creativo funcionan
+                como herramientas fundamentales para el aprendizaje, la
+                expresión y la construcción colectiva. Mi enfoque integra la
+                formación técnica con el desarrollo de la creatividad,
+                promoviendo que cada estudiante descubra y fortalezca su propia
+                voz artística."
+              </p>
+            </div>
+
+            <div class="cv-block">
+              <h5>Trayectoria Artística y Medios</h5>
+              <ul>
+                <li>
+                  <strong>Músico y Compositor en Pakapaka:</strong> Más de diez
+                  años creando música para series emblemáticas como
+                  <em>Minimalitos</em>, <em>Monstruos Rodantes</em>,
+                  <em>Robotia</em> y <em>Animalímpicos</em>.
+                </li>
+                <li>
+                  <strong>Premio Martín Fierro:</strong> Ganador de este
+                  galardón junto al equipo de la serie
+                  <em>Monstruos de la Guarda</em>.
+                </li>
+                <li>
+                  <strong>Proyecciones Internacionales:</strong> Participación
+                  en festivales de cine y animación en Rusia, Polonia, España,
+                  Estados Unidos, Chile y Perú.
+                </li>
+                <li>
+                  <strong>Productor Musical:</strong> Lidera el proyecto de
+                  cumbia electrónica <em>Chaco Boreal</em> (con actividad en
+                  Argentina y Europa) y produce integralmente discos para
+                  diversos artistas independientes.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Experiencia Docente y Pedagógica</h5>
+              <ul>
+                <li>
+                  <strong>Formación Orquestal:</strong> Profesor de Trombón en
+                  las Escuelas del Bicentenario de San Antonio de Areco.
+                </li>
+                <li>
+                  <strong>Docencia Particular:</strong> Profesor de bajo,
+                  guitarra y cuatro venezolano, con amplia experiencia en el
+                  acompañamiento de procesos personalizados para niños y
+                  jóvenes.
+                </li>
+                <li>
+                  <strong>Mirada Integral:</strong> Formación en Dirección de
+                  Cine de Animación (Escuela Da Vinci), integrando música e
+                  imagen con una perspectiva multidisciplinaria para el aula.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Formación Académica</h5>
+              <ul>
+                <li>
+                  Conservatorio Manuel de Falla: Formación profesional en
+                  Trombón.
+                </li>
+                <li>Escuela Da Vinci: Dirección de Cine de Animación.</li>
+                <li>
+                  Formación Independiente: Especialización en producción
+                  musical, grabación y desarrollo creativo en estudio.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Propuesta en Alihuén para Nivel Primario</h5>
+              <ul>
+                <li>
+                  <strong>Taller de Creación Musical y Sonorización:</strong>
+                  Espacios donde los alumnos exploran cómo la música da vida a
+                  las imágenes y los personajes.
+                </li>
+                <li>
+                  <strong>Ensamble Multiinstrumental:</strong> Iniciación en
+                  instrumentos de cuerda y viento bajo una metodología que
+                  prioriza la expresión colectiva.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- DERECHA -->
+          <div class="cv-gallery">
+            <div class="cv-carousel">
+              <img src="./assets/images/circo.jpg" class="active" />
+              <img src="./assets/images/teatro.jpg" />
+              <img src="./assets/images/expresion.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =============================
+     CV NIDO
+     ============================= -->
+    <div id="cv-nido" class="cv-modal">
+      <div class="cv-modal-content">
+        <span class="cv-close" onclick="closeCV('cv-nido')">×</span>
+
+        <div class="cv-body">
+          <div class="cv-info">
+            <!-- IZQUIERDA -->
+            <h2>Nahuel “Nido” Morales</h2>
+            <h4>
+              Profesor Superior de Música | Especialista en Guitarra y Ensambles
+              Musicales
+            </h4>
+
+            <div class="cv-block">
+              <h5>Perfil Profesional</h5>
+              <p>
+                "Como docente de música con amplia trayectoria en el sistema
+                educativo formal, mi enfoque se centra en la creación de
+                proyectos de integración donde el lenguaje musical sea el motor
+                del trabajo en equipo. Busco que cada estudiante desarrolle su
+                responsabilidad y organización a través de la práctica
+                instrumental, promoviendo un espacio de aprendizaje dinámico y
+                comprometido con la excelencia artística".
+              </p>
+            </div>
+
+            <div class="cv-block">
+              <h5>Experiencia Docente e Institucional</h5>
+              <ul>
+                <li>
+                  <strong>Educación Primaria y Secundaria:</strong> Profesor de
+                  música en ejercicio bajo la Dirección General de Escuelas, con
+                  desempeño actual en la Escuela Primaria N.º 5 "Mariano
+                  Moreno".
+                </li>
+                <li>
+                  <strong>Formación Municipal:</strong> Profesor de lenguaje
+                  musical y guitarra en la EMMSA (Escuela Municipal de Música de
+                  San Antonio de Areco) desde el año 2019.
+                </li>
+                <li>
+                  <strong>Integración y Salud:</strong> Docente de música en la
+                  Comunidad Terapéutica “Raíces” (Mercedes), trabajando en
+                  procesos de formación a través del arte.
+                </li>
+                <li>
+                  <strong>Especialista Técnico:</strong> Amplia experiencia en
+                  la enseñanza de lenguaje musical, armonía, historia de la
+                  música e improvisación.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Formación Académica y Producción</h5>
+              <ul>
+                <li>
+                  Profesorado de Música: Título de Profesor de Música en Nivel
+                  Superior con orientación en Guitarra (Conservatorio de la
+                  Ciudad de Mercedes).
+                </li>
+                <li>
+                  Producción Musical: Sonidista y productor musical, con
+                  conocimientos avanzados en programas de edición de audio y
+                  video.
+                </li>
+                <li>
+                  Gestión Artística: Especialista en gestión de trámites para
+                  músicos ante organismos como SADAIC, CAPIF y AADI.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Propuesta en Alihuén para Nivel Primario</h5>
+              <ul>
+                <li>
+                  <strong>Ensambles Musicales Escolares:</strong> Coordinación
+                  de grupos de guitarra, bajo y piano, enfocados en la ejecución
+                  colectiva y el respeto rítmico.
+                </li>
+                <li>
+                  <strong>Taller de Producción Sonora:</strong> Introducción a
+                  la música desde la tecnología, aprovechando sus conocimientos
+                  como sonidista para que los alumnos creen sus propios
+                  registros.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- DERECHA -->
+          <div class="cv-gallery">
+            <div class="cv-carousel">
+              <img src="./assets/images/circo.jpg" class="active" />
+              <img src="./assets/images/ensamble.jpg" />
+              <img src="./assets/images/expresion.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =============================
+     CV ROSARIO
+     ============================= -->
+    <div id="cv-rosario" class="cv-modal">
+      <div class="cv-modal-content">
+        <span class="cv-close" onclick="closeCV('cv-rosario')">×</span>
+
+        <div class="cv-body">
+          <div class="cv-info">
+            <!-- IZQUIERDA -->
+            <h2>Rosario Gasparini</h2>
+            <h4>
+              Especialista en Expresión Corporal y Docencia Infantil |
+              Licenciada en Composición Coreográfica (UNA)
+            </h4>
+
+            <div class="cv-block">
+              <h5>Perfil Profesional</h5>
+              <p>
+                "Como docente de artes del movimiento, mi labor se centra en
+                proporcionar un entorno seguro y estimulante donde lo/as niño/as
+                puedan explorar sus capacidades motoras y expresivas. Mi enfoque
+                pedagógico prioriza el respeto por los tiempos individuales de
+                aprendizaje, el fortalecimiento de la autoestima y el fomento
+                del compañerismo. Entiendo el arte como una herramienta
+                fundamental en la educación primaria para el desarrollo de la
+                inteligencia emocional y la comunicación."
+              </p>
+            </div>
+
+            <div class="cv-block">
+              <h5>Experiencia en Formación Infantil</h5>
+              <ul>
+                <li>
+                  <strong>Iniciación a la Danza (4 a 6 años):</strong>
+                  Desarrollo de propuestas lúdicas orientadas a la coordinación
+                  motriz, el reconocimiento espacial y la rítmica básica.
+                </li>
+                <li>
+                  <strong>Danza Contemporánea (7 a 11 años):</strong> Formación
+                  técnica adaptada, enfocada en la expresión creativa y el
+                  trabajo grupal desde el disfrute.
+                </li>
+                <li>
+                  <strong>Cuidado y Recreación:</strong> Trayectoria en el
+                  acompañamiento y cuidado responsable de niños, garantizando un
+                  trato empático y atento a sus necesidades educativas y
+                  recreativas.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Formación Académica y Pedagógica</h5>
+              <ul>
+                <li>
+                  Licenciatura en Composición Coreográfica (UNA):
+                  Especialización en Expresión Corporal, centrada en el
+                  movimiento como lenguaje inclusivo.
+                </li>
+                <li>
+                  Trayecto Pedagógico: Formación en profesorado de danza,
+                  orientada a la enseñanza en instituciones educativas.
+                </li>
+                <li>
+                  Formación en Artes del Movimiento: Capacitación en técnicas de
+                  danza contemporánea y ballet clásico que promueven el
+                  bienestar físico y emocional.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Propuesta en Alihuén para Nivel Primario</h5>
+              <ul>
+                <li>
+                  <strong>Talleres de Expresión Corporal:</strong> Espacios
+                  dedicados a que el alumno conecte con su propio cuerpo y sus
+                  pares de manera respetuosa.
+                </li>
+                <li>
+                  <strong>Danza y Juego:</strong> Metodologías que integran lo
+                  lúdico con el aprendizaje artístico, ideales para complementar
+                  la jornada escolar de los más chicos.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- DERECHA -->
+          <div class="cv-gallery">
+            <div class="cv-carousel">
+              <img src="./assets/images/circo.jpg" class="active" />
+              <img src="./assets/images/expresion.jpg" />
+              <img src="./assets/images/teatro.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =============================
+     CV LEO
+     ============================= -->
+    <div id="cv-leo" class="cv-modal">
+      <div class="cv-modal-content">
+        <span class="cv-close" onclick="closeCV('cv-leo')">×</span>
+
+        <div class="cv-body">
+          <div class="cv-info">
+            <!-- IZQUIERDA -->
+            <h2>Leontina "Leo" Bringas</h2>
+            <h4>
+              Bailarina y Artista Escénica | Estudiante de la Licenciatura en
+              Composición Coreográfica (UNA)
+            </h4>
+
+            <div class="cv-block">
+              <h5>Perfil Profesional</h5>
+              <p>
+                "Entiendo la danza como un canal fundamental de expresión y
+                descubrimiento personal desde las edades más tempranas. Mi
+                enfoque pedagógico busca fusionar la técnica y la disciplina de
+                la danza con la libertad de la exploración creativa. Mi objetivo
+                es acompañar a los estudiantes en el desarrollo de su conciencia
+                corporal y su seguridad individual, promoviendo siempre un
+                ambiente de trabajo grupal basado en el respeto y la empatía."
+              </p>
+            </div>
+
+            <div class="cv-block">
+              <h5>Trayectoria Artística y Proyectos</h5>
+              <ul>
+                <li>
+                  <strong>Investigación Escénica:</strong> Participante activa
+                  del Laboratorio Escénico dirigido por Yasmin Iriel Frione,
+                  enfocado en la investigación del movimiento y la improvisación
+                  grupal.
+                </li>
+                <li>
+                  <strong>Producción Independiente:</strong> Integrante del
+                  grupo AFANC, colaborando en la creación de performances
+                  multidisciplinarias que combinan danza, acrobacia y poesía.
+                </li>
+                <li>
+                  <strong>Intérprete en Danza Contemporánea:</strong> Participó
+                  en la obra "Más allá de la Nieve", proyecto de danza
+                  contemporánea y urbana inspirado en temáticas de superación y
+                  trabajo colectivo.
+                </li>
+                <li>
+                  <strong>Experiencia en Certámenes:</strong> Participación en
+                  concursos nacionales e internacionales como Danzamérica y el
+                  Concurso Interamericano de Danza (CIAD).
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Formación Académica y Técnica</h5>
+              <ul>
+                <li>
+                  Formación Universitaria: Actualmente cursa la Licenciatura en
+                  Composición Coreográfica con mención en Danza en la
+                  Universidad Nacional de las Artes (UNA).
+                </li>
+                <li>
+                  Danza Clásica y Contemporánea: Formación en instituciones como
+                  la Fundación Julio Bocca, Arte XXI y Danzalma Estudio Ballet.
+                </li>
+                <li>
+                  Acrobacia y Teatro: Estudios en acrobacia de suelo y
+                  seminarios de actuación, aportando una mirada integral del
+                  cuerpo en escena.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h5>Propuesta en Alihuén para Nivel Primario</h5>
+              <ul>
+                <li>
+                  <strong>Iniciación a la Danza y Acrobacia:</strong> Talleres
+                  diseñados para que los niños exploren el movimiento, la
+                  elasticidad y el equilibrio a través del juego y la técnica
+                  básica.
+                </li>
+                <li>
+                  <strong>Taller de Expresión Corporal:</strong> Espacios de
+                  exploración donde la danza se utiliza como herramienta para
+                  potenciar la comunicación y el vínculo con los pares.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- DERECHA -->
+          <div class="cv-gallery">
+            <div class="cv-carousel">
+              <img src="./assets/images/circo.jpg" class="active" />
+              <img src="./assets/images/acrobacia.jpg" />
+              <img src="./assets/images/expresion.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
