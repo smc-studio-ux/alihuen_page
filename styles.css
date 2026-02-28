@@ -30,17 +30,22 @@ body {
 /* ---------- HEADER ---------- */
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 20;
-  padding: 25px 40px;
+  z-index: 1000;
   transition:
-    background 0.4s ease,
-    backdrop-filter 0.4s ease;
+    background 0.6s ease,
+    backdrop-filter 0.8s ease,
+    box-shadow 0.6s ease,
+    padding 0.4s ease;
 }
-
+.header.scrolled {
+  background: rgba(0, 0, 0, 0.685);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
 .nav {
   color: white;
   max-width: 1200px;
@@ -59,6 +64,7 @@ body {
   display: flex;
   list-style: none;
   gap: 30px;
+  font-weight: bold;
 }
 
 .menu a {
@@ -107,9 +113,29 @@ body {
 /* contenedor general */
 .hero-inner {
   max-width: 900px;
-  padding: 160px 20px 140px;
-}
+  padding: 0 20px;
+  height: 100vh;
 
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.hero-top {
+  margin-bottom: 250px;
+}
+.hero-bottom {
+  max-width: 650px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-bottom .btn-secondary {
+  margin-top: 40px;
+}
 /* título arriba */
 .hero-top h1 {
   font-family: "Obaken", "Playfair Display", serif;
@@ -509,7 +535,16 @@ body.modal-open {
   font-size: 20px;
   margin-bottom: 6px;
 }
+.logo img {
+  height: 100px; /* podés ajustar tamaño */
+  width: auto;
+  display: block;
+}
 
+.logo {
+  display: flex;
+  align-items: center;
+}
 .member-role {
   display: block;
   font-size: 13px;
@@ -908,5 +943,13 @@ body.modal-open {
   .btn-secondary {
     padding: 10px 22px;
     font-size: 14px;
+  }
+  .header {
+    padding: 10px;
+  }
+  .logo img {
+    height: 80px; /* podés ajustar tamaño */
+    width: auto;
+    display: block;
   }
 }

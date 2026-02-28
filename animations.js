@@ -56,3 +56,12 @@ document.querySelectorAll(".cv-carousel").forEach((carousel) => {
     images[index].classList.add("active");
   }, 3500);
 });
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".header");
+
+  if (window.scrollY > 950) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
