@@ -65,3 +65,18 @@ window.addEventListener("scroll", function () {
     header.classList.remove("scrolled");
   }
 });
+function openWorkshop(id) {
+  document.getElementById(id).style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+
+function closeWorkshop(id) {
+  document.getElementById(id).style.display = "none";
+  document.body.style.overflow = "auto";
+}
+window.addEventListener("click", function (e) {
+  if (e.target.classList.contains("workshop-modal")) {
+    e.target.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+});
